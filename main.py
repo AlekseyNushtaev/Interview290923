@@ -33,10 +33,8 @@ def balance(string: str):
             if stack.is_empty():
                 return False
             else:
-                if i != invert(stack.peek()):
+                if i != invert(stack.pop()):
                     return False
-                else:
-                    stack.pop()
     if stack.is_empty():
         return True
     else:
